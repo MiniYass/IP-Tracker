@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <title>IP Tracker</title>
+</head>
+<body>
+
+  <div class="header">
+
+    <h1>IP TRACKER</h1>
+
+    <div class="searchIp">
+      <input id="searchIp"  type="text" placeholder="Please enter an IP address..." >
+      <input id="searchBtn" type="submit" value=">">
+    </div>
+
+    <div class="container">
+
+        <span class="information">
+          <h2 class="titre">IP ADDRESS</h2>
+          <h3 class="data" id="ipAddr"></h3>
+        </span>
+
+        <span class="information">
+          <h2 class="titre">LOCATION</h2>
+          <h3 class="data" id="town"> </h3>
+        </span>
+
+        <span class="information">
+          <h2 class="titre">TIMEZONE</h2>
+          <h3 class="data" id="timezone"></h3>
+        </span>
+
+        <span class="information">
+          <h2 class="titre">ISP</h2>
+          <h3 class="data last" id="isp"></h3>
+        </span>
+
+    </div>
+
+  </div>
+
+
+  <div id="mapid"></div>
+  <script src="script.js"></script>
+
+</body>
+</html>
